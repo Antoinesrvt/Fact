@@ -1,4 +1,4 @@
-export enum Transpor {
+export enum Transport {
   Road,
   Rail,
   Air,

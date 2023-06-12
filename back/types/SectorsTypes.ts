@@ -7,6 +7,9 @@ export enum Sectors {
   LandUse,
 }
 
+export type SectorsType = keyof typeof Sectors;
+
+
 export enum PrincipalSectors {
   Energy,
   Industry,

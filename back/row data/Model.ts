@@ -5,49 +5,49 @@ export const C02Emissions_PerPrincipalSector: EmissionsPerSector[] = [
   {
     sector: Sectors.PowerIndustry,
     emissions: {
-      value: 37120000000,
+      value: 0,
       unit: Units.Tonnes,
-      evolutionRate: 0.06,
+      evolutionRate: 0.0,
     },
   },
   {
     sector: Sectors.Transport,
     emissions: {
-      value: 3712000000,
+      value: 0,
       unit: Units.Tonnes,
-      evolutionRate: 0.06,
+      evolutionRate: 0.0,
     },
   },
   {
     sector: Sectors.Buildings,
     emissions: {
-      value: 37120000000,
+      value: 0,
       unit: Units.Tonnes,
-      evolutionRate: 0.06,
+      evolutionRate: 0.0,
     },
   },
   {
     sector: Sectors.GlobalIndustry,
     emissions: {
-      value: 37120000000,
+      value: 0,
       unit: Units.Tonnes,
-      evolutionRate: 0.06,
+      evolutionRate: 0.0,
     },
   },
   {
     sector: Sectors.Agriculture,
     emissions: {
-      value: 37120000000,
+      value: 0,
       unit: Units.Tonnes,
-      evolutionRate: 0.06,
+      evolutionRate: 0.0,
     },
   },
   {
     sector: Sectors.LandUse,
     emissions: {
-      value: 37120000000,
+      value: 0,
       unit: Units.Tonnes,
-      evolutionRate: 0.06,
+      evolutionRate: 0.0,
     },
   },
 ];

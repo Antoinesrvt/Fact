@@ -1,8 +1,8 @@
 import { Sectors } from "./SectorsTypes";
 
 export enum Units {
-  Tonnes,
-  Kilograms
+  Tonnes = "t",
+  Kilograms = "kg",
 }
 
 export type EmissionsPerSector = {

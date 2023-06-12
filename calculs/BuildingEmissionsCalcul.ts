@@ -1,3 +1,5 @@
+import { EmissionsPerSector } from "../back/types/EmissionsTypes";
+import { SectorListType } from "../back/types/SectorsTypes";
 
 function getMaterialEmissions(material: string, emissions: number, alreadyCalculatedEmissions?: number): number | string {
   switch (material) {
@@ -11,4 +13,18 @@ function getMaterialEmissions(material: string, emissions: number, alreadyCalcul
     default:
       return emissions;
   }
+}
+
+function getRejectedEmissions(globalEmissions: number, absorbedEmissions: number): number {
+  return globalEmissions / absorbedEmissions;
+}
+
+function getEmissionsPercentBySectors(totalEmissions: number, sectors: EmissionsPerSector[]): Array<number> {
+  const emissionsPerSector = Array<number>(sectors.length);
+  for (let i = 0; i < sectors.length; i++) {
+    emissionsPerSector.push(
+      (sectors[i].emissions.value * 100) / totalEmissions
+    );
+  }
+  return emissionsPerSector;
 }

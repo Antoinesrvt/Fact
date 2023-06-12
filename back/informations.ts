@@ -1,4 +1,4 @@
-import { Sectors, InformationPerSector } from "./types/EmissionsTypes";
+import { Sectors, InformationPerSector } from "./back/types/EmissionsTypes";
 
 const InformationForLandUse: InformationPerSector = {
   sector: Sectors.LandUseChange,
